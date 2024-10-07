@@ -51,9 +51,9 @@
 	\begin{itemize}
 	\item In other words: Null vs Alternate
 	\end{itemize}
-  \item p-values determine the signifiance threshold
+  \item Decisions are determined by the signifiance threshold
   \item NHST dominates science
-  \item If I present a significant result of a known fact like "The Earth is round," nothing is gained
+  \item If one presents a significant result of a known fact like "The Earth is round," nothing is gained
   \end{itemize}
 \end{frame}
 
@@ -78,7 +78,7 @@ tested" - Bill Rozeboom (1960)
    \item He draws a random sample of 30 cases and finds that 1 person has the disease
    \item $P_S$ = 1/30 = .033
    \end{itemize}
-\item Does $H_0$ need testing with a ch-square? How about a Fischer exact test??
+\item Does $H_0$ need testing with a chi-square? How about a Fischer exact test??
 \item Cohen among many other scientists knows that academia would complain unless this result had a p-value attached to it
  \end{itemize}
 \end{frame}
@@ -102,47 +102,72 @@ tested" - Bill Rozeboom (1960)
 %Slide 6
 \begin{frame}{The Permanent Illusion}
   \begin{itemize}
-  \item Virtual participants: put questions into the Q/A window in WebEx
-  \item In-person participants: walk to a microphone and wait to be called upon
-    before asking your question
-  \item Lunch on your own (Student Union food court right next door)x
-  \item Coffee/cookies available during the poster session (11:30--13:30)
-  \item Training workshops:
-    \begin{itemize}
-    \item Each workshop has its own (webex meeting) room
-    \item Virtual participants please mute yourself in each session.
-    \end{itemize}
+  \item Many believe the level of significance at which $H_0$ is rejected is the probability that it is correct 
+  \item Syllogistic Reasoning according to Aristotle
+	 \begin{itemize}
+ 	 \item If the null hypothesis is correct, then this datum (D) can not occur
+	 \item D has, however, occurred
+          \item Therefore, the null hypothesis is false.
+ 	 \end{itemize}
+\item This is an example of a modus tollens syllogism, denying the antecedent by denying the consequent
+	 \begin{itemize}
+ 	 \item If P, then Q 
+	 \item Not Q (Q is false)
+          \item Therefore, not P (P is false)
+ 	 \end{itemize}
   \end{itemize}
 \end{frame}
 
 %Slide 7
-\begin{frame}{The Permanent Illusion cont.}
+\begin{frame}{Probabilistic Syllogism}
   \begin{itemize}
-  \item Virtual participants: put questions into the Q/A window in WebEx
-  \item In-person participants: walk to a microphone and wait to be called upon
-    before asking your question
-  \item Lunch on your own (Student Union food court right next door)x
-  \item Coffee/cookies available during the poster session (11:30--13:30)
-  \item Training workshops:
+  \item What if the syllogism is probabilistic?
     \begin{itemize}
-    \item Each workshop has its own (webex meeting) room
-    \item Virtual participants please mute yourself in each session.
+    \item If the null hypothesis is correct, then these data are highly unlikely
+    \item These data have occurred
+    \item Therefore, the null hypothesis is highly unlikely
+    \end{itemize}
+  \item This makes the syllogism formally invalid %syllogims must deal with true-false to be formally valid
+	 \begin{itemize}
+ 	 \item If P, then Q is likely
+	 \item Not Q
+          \item Therefore, P is unlikely
+ 	 \end{itemize}
+  \end{itemize}
+\end{frame}
+
+%Slide 8
+\begin{frame}{Examples of Syllogisms}
+  \begin{itemize}
+  \item Some Examples:
+    \begin{itemize}
+    \item If a person is a Martian, then he is not a member of Congress
+    \item This person is a member of Congress
+    \item Therefore, he is not a Martian
+    \end{itemize}
+  \item How about this one?
+    \begin{itemize}
+    \item If a person is an American, then he is not a member of Congress  %the major premise is false here, so this syllogism is not sensible, but it is still formally correct
+    \item This person is a member of Congress
+    \item Therefore, he is not an American
     \end{itemize}
   \end{itemize}
 \end{frame}
 
 %Slide 8
-\begin{frame}{The Permanent Illusion cont.}
+\begin{frame}{Examples of Syllogisms cont.}
   \begin{itemize}
-  \item Virtual participants: put questions into the Q/A window in WebEx
-  \item In-person participants: walk to a microphone and wait to be called upon
-    before asking your question
-  \item Lunch on your own (Student Union food court right next door)x
-  \item Coffee/cookies available during the poster session (11:30--13:30)
-  \item Training workshops:
+  \item What about now?
     \begin{itemize}
-    \item Each workshop has its own (webex meeting) room
-    \item Virtual participants please mute yourself in each session.
+    \item If a person is an American, then he is probably not a member of Congress %probabilistic here, syllogism is formally incorrect which leads to a nonsensible conclusion
+    \item This person is a member of Congress
+    \item Therefore, he is probably not an American
+    \end{itemize}
+  \item This last one?
+    \begin{itemize}
+    \item If $H_0$ is true, then this result (statistical significance) would probably not occur %this if formally the exact same as the previous example, and this is also formally invalid
+    \item This result has occurred
+    \item Therefore, $H_0$ is probably not true
     \end{itemize}
   \end{itemize}
 \end{frame}
