@@ -32,7 +32,7 @@
  
 \frame{\titlepage}
 
- % slide 3
+ % slide 2
 \begin{frame}{An Introduction to Cohen's Paper}
   \begin{itemize}
   \item Scientific advancement has been hindered by null hypothesis testing (NHST)
@@ -52,7 +52,8 @@
 	\item In other words: Null vs Alternate
 	\end{itemize}
   \item p-values determine the signifiance threshold
-  \item NHST is dominates science
+  \item NHST dominates science
+  \item If I present a significant result of a known fact like "The Earth is round," nothing is gained
   \end{itemize}
 \end{frame}
 
@@ -60,42 +61,46 @@
 \begin{frame}{A Ritualization of Reasoning $(p < .05)$}
   \begin{itemize}
   \item Cohen argues against the rigid reliance on p-values
-  \item 133 registrants through Clubear, our partner in China, thank
-    Prof. Hansheng Wang, Peking University
-  \item Schizophrenic
-    \begin{tabular}{ccccc}
-      \toprule
-     Result &   Normal & Schiz & Total \\
-      \midrule
-      Negative Test (Normal)  &  949     &   1           &  950        \\
-      Positive Test (Schiz)  &  30      &    20          &  50        \\
-      Total    &  979      & 21          & 1,000         \\
-      \bottomrule
-    \end{tabular}
+  \item Standard p-value of .05
+  \item Dichotomous reject-accept decision
+  \item "The primary aim of a scientific experiment is not to precipitate decisions, but to make an appropriate adjustment in the degree to which one . . . believes the hypothesis . . . being
+tested" - Bill Rozeboom (1960)
   \end{itemize}
 \end{frame}
 
 % Slide 5
 \begin{frame}{Misinterpretation of p-values}
 \begin{itemize} %[parsep=0pt, leftmargin=4mm, topsep=0pt, itemsep=0pt]
-\item
-Alison Lukan, Seattle Kraken Contributor and TV Analyst for Root
- Sports
- \item
- Brian Macdonald, Lecturer, Department of Statistics and Data
- Science, Yale University
-\item
-Gregory J. Matthews, Associate Professor, Statistics, Loyola
-University Chicago
-\item  
-Lauren (Poe) Parolin, Sports Analytics Developer, ESPN
-\item
- Jun Yan (Chair), Professor of Statistics, University of Connecticut
+\item Consider a Scenario
+   \begin{itemize}
+   \item A scientist believes a certain disease does not exist 
+   \item $H_0$: P = 0
+   \item He draws a random sample of 30 cases and finds that 1 person has the disease
+   \item $P_S$ = 1/30 = .033
+   \end{itemize}
+\item Does $H_0$ need testing with a ch-square? How about a Fischer exact test??
+\item Cohen among many other scientists knows that academia would complain unless this result had a p-value attached to it
  \end{itemize}
 \end{frame}
 
 %Slide 6
-\begin{frame}{The Illusion of Proof}
+\begin{frame}{So, what is wrong?}
+  \begin{itemize}
+  \item We think NHST tells us, "Given these data, what is the probability that $H_0$ is true?"
+  \item What NHST actually tells us, "Given that $H_0$ is true, what is the probability of these (or more extreme) data?"
+    before asking your question
+  \item Academics have railed against NHST for many years before Cohen's paper
+    \begin{itemize}
+    \item "a potent but sterile intellectual rake who leaves in his merry path a long train of ravished maidens but no viable scientific offspring" - Meehl in 1967
+    \item Joseph Berkson attacked NHST in 1938
+    \item Lancelot Hogben's book-length critique appeared in 1957
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+%Slide 6
+\begin{frame}{The Permanent Illusion}
   \begin{itemize}
   \item Virtual participants: put questions into the Q/A window in WebEx
   \item In-person participants: walk to a microphone and wait to be called upon
@@ -111,7 +116,7 @@ Lauren (Poe) Parolin, Sports Analytics Developer, ESPN
 \end{frame}
 
 %Slide 7
-\begin{frame}{The Illusion of Proof}
+\begin{frame}{The Permanent Illusion cont.}
   \begin{itemize}
   \item Virtual participants: put questions into the Q/A window in WebEx
   \item In-person participants: walk to a microphone and wait to be called upon
@@ -127,7 +132,7 @@ Lauren (Poe) Parolin, Sports Analytics Developer, ESPN
 \end{frame}
 
 %Slide 8
-\begin{frame}{The Illusion of Proof}
+\begin{frame}{The Permanent Illusion cont.}
   \begin{itemize}
   \item Virtual participants: put questions into the Q/A window in WebEx
   \item In-person participants: walk to a microphone and wait to be called upon
@@ -143,18 +148,18 @@ Lauren (Poe) Parolin, Sports Analytics Developer, ESPN
 \end{frame}
 
 %Slide 8
-\begin{frame}{The Illusion of Proof}
+\begin{frame}{P(D$|$$H_0$) \neq P($H_0$$|$D)}
   \begin{itemize}
-  \item Virtual participants: put questions into the Q/A window in WebEx
-  \item In-person participants: walk to a microphone and wait to be called upon
-    before asking your question
-  \item Lunch on your own (Student Union food court right next door)x
-  \item Coffee/cookies available during the poster session (11:30--13:30)
-  \item Training workshops:
-    \begin{itemize}
-    \item Each workshop has its own (webex meeting) room
-    \item Virtual participants please mute yourself in each session.
-    \end{itemize}
+  \item Schizophrenic
+    \begin{tabular}{ccccc}
+      \toprule
+     Result &   Normal & Schiz & Total \\
+      \midrule
+      Negative Test (Normal)  &  949     &   1           &  950        \\
+      Positive Test (Schiz)  &  30      &    20          &  50        \\
+      Total    &  979      & 21          & 1,000         \\
+      \bottomrule
+    \end{tabular}
   \end{itemize}
 \end{frame}
 

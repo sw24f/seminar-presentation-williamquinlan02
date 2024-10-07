@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.16)  6 OCT 2024 20:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.16)  7 OCT 2024 08:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -968,6 +968,19 @@ Package pdftex.def Info: ./images/JacobCohen.png  used on input line 45.
 [9
 
 ]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.164 \end{frame}
+                 
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.164 \end{frame}
+                 
+? 
+
 
 [10
 
@@ -1016,6 +1029,10 @@ Package pdftex.def Info: ./images/JacobCohen.png  used on input line 45.
 [21
 
 ]
+
+[22
+
+]
 \tf@nav=\write6
 \openout6 = `ucsas22.nav'.
 
@@ -1034,9 +1051,9 @@ Package rerunfilecheck Info: File `ucsas22.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22064 strings out of 473578
- 419311 string characters out of 5732242
- 787784 words of memory out of 5000000
+ 22066 strings out of 473578
+ 419330 string characters out of 5732242
+ 787783 words of memory out of 5000000
  44468 multiletter control sequences out of 15000+600000
  569535 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1046,12 +1063,15 @@ live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2024
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2024/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2024/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmssi17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfo
-nts/symbols/msam10.pfb>
-Output written on ucsas22.pdf (21 pages, 411562 bytes).
+ic/amsfonts/cm/cmssi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmssi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mssi17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pf
+b><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on ucsas22.pdf (22 pages, 449446 bytes).
 PDF statistics:
- 598 PDF objects out of 1000 (max. 8388607)
- 548 compressed objects within 6 object streams
- 43 named destinations out of 1000 (max. 500000)
+ 643 PDF objects out of 1000 (max. 8388607)
+ 584 compressed objects within 6 object streams
+ 45 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
