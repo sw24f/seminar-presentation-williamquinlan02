@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.16)  7 OCT 2024 10:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.16)  7 OCT 2024 10:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1022,19 +1022,18 @@ l.187 \end{frame}
 
 ]
 
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.316 \end{frame}
+                 
+? 
+
+
 [20
-
-]
-
-[21
-
-]
-
-[22
-
-]
-
-[23
 
 ]
 \tf@nav=\write6
@@ -1055,11 +1054,11 @@ Package rerunfilecheck Info: File `ucsas22.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22083 strings out of 473578
- 419753 string characters out of 5732242
+ 22072 strings out of 473578
+ 419666 string characters out of 5732242
  788784 words of memory out of 5000000
- 44483 multiletter control sequences out of 15000+600000
- 569535 words of font info for 77 fonts, out of 8000000 for 9000
+ 44478 multiletter control sequences out of 15000+600000
+ 569841 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,14n,123p,382b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/tex
@@ -1072,10 +1071,10 @@ nts/cm/cmssi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mssi17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pf
 b><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ucsas22.pdf (23 pages, 454414 bytes).
+Output written on ucsas22.pdf (20 pages, 449182 bytes).
 PDF statistics:
- 669 PDF objects out of 1000 (max. 8388607)
- 608 compressed objects within 7 object streams
- 47 named destinations out of 1000 (max. 500000)
+ 592 PDF objects out of 1000 (max. 8388607)
+ 535 compressed objects within 6 object streams
+ 41 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
