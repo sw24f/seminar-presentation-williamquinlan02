@@ -99,7 +99,7 @@ tested" - Bill Rozeboom (1960)
 \end{frame}
 
 
-%Slide 6
+%Slide 7
 \begin{frame}{The Permanent Illusion}
   \begin{itemize}
   \item Many believe the level of significance at which $H_0$ is rejected is the probability that it is correct 
@@ -118,7 +118,7 @@ tested" - Bill Rozeboom (1960)
   \end{itemize}
 \end{frame}
 
-%Slide 7
+%Slide 8
 \begin{frame}{Probabilistic Syllogism}
   \begin{itemize}
   \item What if the syllogism is probabilistic?
@@ -127,7 +127,7 @@ tested" - Bill Rozeboom (1960)
     \item These data have occurred
     \item Therefore, the null hypothesis is highly unlikely
     \end{itemize}
-  \item This makes the syllogism formally invalid %syllogims must deal with true-false to be formally valid
+  \item This makes what was a valid modus tollens syllogism formally invalid %syllogims must deal with true-false to be formally valid
 	 \begin{itemize}
  	 \item If P, then Q is likely
 	 \item Not Q
@@ -136,7 +136,7 @@ tested" - Bill Rozeboom (1960)
   \end{itemize}
 \end{frame}
 
-%Slide 8
+%Slide 9
 \begin{frame}{Examples of Syllogisms}
   \begin{itemize}
   \item Some Examples:
@@ -154,7 +154,7 @@ tested" - Bill Rozeboom (1960)
   \end{itemize}
 \end{frame}
 
-%Slide 8
+%Slide 10
 \begin{frame}{Examples of Syllogisms cont.}
   \begin{itemize}
   \item What about now?
@@ -172,99 +172,100 @@ tested" - Bill Rozeboom (1960)
   \end{itemize}
 \end{frame}
 
-%Slide 8
+%Slide 11
 \begin{frame}{P(D$|$$H_0$) \neq P($H_0$$|$D)}
   \begin{itemize}
-  \item Schizophrenic
-    \begin{tabular}{ccccc}
-      \toprule
-     Result &   Normal & Schiz & Total \\
-      \midrule
-      Negative Test (Normal)  &  949     &   1           &  950        \\
-      Positive Test (Schiz)  &  30      &    20          &  50        \\
-      Total    &  979      & 21          & 1,000         \\
-      \bottomrule
-    \end{tabular}
-  \end{itemize}
-\end{frame}
-
-%Slide 10
-\begin{frame}{The Illusion of Proof}
-  \begin{itemize}
-  \item Virtual participants: put questions into the Q/A window in WebEx
-  \item In-person participants: walk to a microphone and wait to be called upon
-    before asking your question
-  \item Lunch on your own (Student Union food court right next door)x
-  \item Coffee/cookies available during the poster session (11:30--13:30)
-  \item Training workshops:
+  \item When testing $H_0$, one is finding the probability data (D) could have arisen if $H_0$ were true, P(D$|$$H_0$)
+  \item If this probability is small, one can conclude that $H_0$ is true and D is unlikely
+  \item What about the reverse probability P($H_0$$|$D)?
     \begin{itemize}
-    \item Each workshop has its own (webex meeting) room
-    \item Virtual participants please mute yourself in each session.
-    \end{itemize}
-  \end{itemize}
-\end{frame}
-
-%Slide 11
-\begin{frame}{The Illusion of Proof}
-  \begin{itemize}
-  \item Virtual participants: put questions into the Q/A window in WebEx
-  \item In-person participants: walk to a microphone and wait to be called upon
-    before asking your question
-  \item Lunch on your own (Student Union food court right next door)x
-  \item Coffee/cookies available during the poster session (11:30--13:30)
-  \item Training workshops:
-    \begin{itemize}
-    \item Each workshop has its own (webex meeting) room
-    \item Virtual participants please mute yourself in each session.
+    \item When rejecting $H_0$, one wants to conclude $H_0$ is unlikely
+    \item This probability is only available through Bayes theorem where we need to know P($H_0$)
+    \item Bayesian statisticians use a prior probability or distribution of probabilities to deal with this problem, but does it hold up?
     \end{itemize}
   \end{itemize}
 \end{frame}
 
 %Slide 12
-\begin{frame}{The Illusion of Proof}
+\begin{frame}{A Look at Psychiatric Diagnoses}
   \begin{itemize}
-  \item Virtual participants: put questions into the Q/A window in WebEx
-  \item In-person participants: walk to a microphone and wait to be called upon
-    before asking your question
-  \item Lunch on your own (Student Union food court right next door)x
-  \item Coffee/cookies available during the poster session (11:30--13:30)
-  \item Training workshops:
+  \item Incidence of schizophrenia in adults is 2\%\
+  \item A proposed screening test is estimated to have 95\% accuracy (P(normality$|$$H_0$) \(\approx\) 0.95)
+  \item The screening test is supposed to have 97\% accuracy in declaring normality (P(schizophrenia$|$$H_1$) \(>\) 0.97)
+  \item Thus, we have a test that is highly sensitive and highly specific
     \begin{itemize}
-    \item Each workshop has its own (webex meeting) room
-    \item Virtual participants please mute yourself in each session.
+    \item $H_0$ = The case is normal
+    \item $H_1$ = The case is schizophrenic
+    \item D = The test result (the data) is positive for schizophrenia
     \end{itemize}
   \end{itemize}
 \end{frame}
 
 %Slide 13
-\begin{frame}{The Illusion of Proof}
+\begin{frame}{A Look at Psychiatric Diagnoses cont.}
   \begin{itemize}
-  \item Virtual participants: put questions into the Q/A window in WebEx
-  \item In-person participants: walk to a microphone and wait to be called upon
-    before asking your question
-  \item Lunch on your own (Student Union food court right next door)x
-  \item Coffee/cookies available during the poster session (11:30--13:30)
-  \item Training workshops:
+  \item P(D$|$$H_0$) \(<\) .05 seems like what we want, but it is not
+  \item We want P($H_0$$|$D) which equals .60, not the .05 we may have believed
+\[
+P(H_0 | D) = \frac{P(H_0) \cdot P(\text{test wrong} | H_0)}{P(H_0) \cdot P(\text{test wrong} | H_0) + P(H_1) \cdot P(\text{test correct} | H_1)}
+\]
+\item Schizophrenic
+\begin{tabular}{ccccc}
+  \toprule
+ Result &   Normal & Schiz & Total \\
+  \midrule
+ Negative Test (Normal)  &  949     &   1           &  950        \\
+ Positive Test (Schiz)  &  30      &    20          &  50        \\
+ Total    &  979      & 21          & 1,000         \\
+  \bottomrule
+%Cohen says this is a common phenomena in textbooks and even among academics. This inverse probability error is all too common. This was an error made by 68 of 70 academics in a study performed by Oakes in 1986
+\end{tabular}
+  \end{itemize}
+\end{frame}
+
+%Slide 12
+\begin{frame}{Replication}
+  \begin{itemize}
+  \item The error previously demonstrated can also be applied to replication of tests
+  \item If there was a successful rejection of $H_0$ many believe replications will also result in the rejection of $H_0$
+  \item Many believe that a p of .99 means 99\% of the time a result will replicate
+  \item Typical level of power for medium effect sizes of .50
     \begin{itemize}
-    \item Each workshop has its own (webex meeting) room
-    \item Virtual participants please mute yourself in each session.
+    \item The chances are in three replications only one in eight would result in significant results
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+%Slide 13
+\begin{frame}{More Syllogisms}
+  \begin{itemize}
+  \item We have just seen many failures in logic by researchers such as if $H_0$ is rejected, then the theorey is established. Invalid syllogism and example below: 
+    \begin{itemize}
+    \item If it rains (A), then the ground will be wet (B).
+    \item The ground is wet (B).
+    \item Therefore, it rained (A).
+    \end{itemize}
+  \item However, even if a valid modus tollens syllogism in used, misinterpretations are still made
+    \begin{itemize}
+   \item When $H_0$ is rejected, it can be because of a variety of auxillary theories, and not what precipitated the research
+   \item Although it is convenient, accept-reject decisions; although convenient, are not how science is done
     \end{itemize}
   \end{itemize}
 \end{frame}
 
 %Slide 14
-\begin{frame}{The Illusion of Proof}
+\begin{frame}{The Nil Hypothesis}
   \begin{itemize}
-  \item Virtual participants: put questions into the Q/A window in WebEx
-  \item In-person participants: walk to a microphone and wait to be called upon
-    before asking your question
-  \item Lunch on your own (Student Union food court right next door)x
-  \item Coffee/cookies available during the poster session (11:30--13:30)
-  \item Training workshops:
+  \item Some propositions consider what is occuring within a population (i.e. the proportion of males in this population is .75)
+  \item Cohen refers to the $H_0$ when the effect size = 0 as the nil hypothesis
+  \item Effecet size is effectively the practical significance of a test
+  \item However, universally $H_0$ is taken to mean nil (zero), Ex:
     \begin{itemize}
-    \item Each workshop has its own (webex meeting) room
-    \item Virtual participants please mute yourself in each session.
+    \item $H_0$ is the proportion of males in a population if .50
+    \item $H_0$ is the raters reliability is 0
     \end{itemize}
+  \item These are cases when $H_0$ is almost universally rejected
+  \item Tukey wrote, "It is foolish to ask 'Are the effects of A and B different?' They are always different—for some decimal place"
   \end{itemize}
 \end{frame}
 
