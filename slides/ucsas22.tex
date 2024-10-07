@@ -220,6 +220,8 @@ P(H_0 | D) = \frac{P(H_0) \cdot P(\text{test wrong} | H_0)}{P(H_0) \cdot P(\text
  Total    &  979      & 21          & 1,000         \\
   \bottomrule
 %Cohen says this is a common phenomena in textbooks and even among academics. This inverse probability error is all too common. This was an error made by 68 of 70 academics in a study performed by Oakes in 1986
+% Cohen identifies himself as one of the statisticians who was caught making this error
+% as a result many neglect the power testing their results. power is like how big your net is when catching fish
 \end{tabular}
   \end{itemize}
 \end{frame}
@@ -230,7 +232,7 @@ P(H_0 | D) = \frac{P(H_0) \cdot P(\text{test wrong} | H_0)}{P(H_0) \cdot P(\text
   \item The error previously demonstrated can also be applied to replication of tests
   \item If there was a successful rejection of $H_0$ many believe replications will also result in the rejection of $H_0$
   \item Many believe that a p of .99 means 99\% of the time a result will replicate
-  \item Typical level of power for medium effect sizes of .50
+  \item Typical level of power for medium effect sizes of .50 %effect size is basically the difference between H0 and Ha. If students try a new studying method and do a little bit better on an exam, low effect size. If they do way better on a test, high effect size
     \begin{itemize}
     \item The chances are in three replications only one in eight would result in significant results
     \end{itemize}
@@ -266,6 +268,7 @@ P(H_0 | D) = \frac{P(H_0) \cdot P(\text{test wrong} | H_0)}{P(H_0) \cdot P(\text
     \item $H_0$ is the raters reliability is 0
     \end{itemize}
   \item These are cases when $H_0$ is almost universally rejected
+  \item Cohen states that the Nil Hypothesis is always false % even if different only to a tiny degree, a large enough sample will lead to its rejection
   \item Tukey wrote, "It is foolish to ask 'Are the effects of A and B different?' They are always different—for some decimal place"
   \end{itemize}
 \end{frame}
@@ -273,26 +276,26 @@ P(H_0 | D) = \frac{P(H_0) \cdot P(\text{test wrong} | H_0)}{P(H_0) \cdot P(\text
 %Slide 17
 \begin{frame}{The Nil Hypothesis cont.}
   \begin{itemize}
-  \item Even if a test is statistically significant with $p < .000001$, there is ambient correlation noise among often arbitrarily paired variables
+  \item Even if a test is statistically significant with $p < .000001$, there can be ambient correlation noise among often arbitrarily paired variables %aka crud factor
   \item Given the fact that the nil hypothesis is always false, the rate of Type I errors is 0\%, not 5\%, and that only Type II errors can be made, which run typically at about 50\%
   \item The sample effect size necessary for significance is notably larger than tha actual population effect size 
-  \item The use of a Bonferoni adjustment is then adjusting for non-existent alpha error which in turn overestimates the population effect size
-  \item Again, typically little is learned from A is larger than B $(p < .01)$
+  \item The use of a Bonferoni adjustment is then adjusting for non-existent alpha error which in turn overestimates the population effect size %using an adjustment for alpha error on a nil hypothesis are adjusting for a nonexistant alpha error
+  \item Again, typically little is learned from A is larger than B $(p < .01)$ %all that is learned from failing to reject is the direction of difference between A and B is uncertain, we need amounts
   \end{itemize}
 \end{frame}
 
 %Slide 18
 \begin{frame}{Quantifying Effects}
   \begin{itemize}
-  \item Confidence intervals and effect sizes are necessary for scientific advancement. 
-  \item Scientists cannot only record pulling a rubberband makes it longer, how much longer is necessary
-  \item Correlation Coefficients depend on the selection of the population, regression coefficients do not
-  \item Correlations do not provide insight to causal strength, within group variation can change a correlations strength
-  \item Cohen's d and f - like correlations, these values are impacted by the variability across the population
+  \item Confidence intervals and effect sizes are necessary for scientific advancement
+  \item Scientists cannot only record pulling a rubberband makes it longer, how much longer is necessary % we need amount and direction to measure differences between A and B
+  \item Correlation coefficients depend on the selection of the population, regression coefficients do not % to make raw correlation coefficients useful, scientists need to start agreeing on standardized units
+  \item Correlations do not provide insight to causal strength, within group variation can change a correlations strength %researchers are stuck measuring, if you pull on it, it gets longer, and forego saying how much longer it gets
+  \item Cohen's d and f | like correlations, these values are impacted by the variability across the population %cohens d and f are standardized measures of effect sizes
   \item The context of a regression matters greatly as seen in Cohen's height and IQ 
     \begin{itemize}
     \item Cohen had a statistically significant correlation between height and IQ
-    \item This translated to a regression coefficient that meant a 30 point iq increase required 14 feet of additional height
+    \item This translated to a regression coefficient that meant to raise a childs iq by 30 required enough growth hormone to raise his or her height by 14 feet
     \end{itemize}
   \end{itemize}
 \end{frame}
@@ -300,11 +303,16 @@ P(H_0 | D) = \frac{P(H_0) \cdot P(\text{test wrong} | H_0)}{P(H_0) \cdot P(\text
 %Slide 19
 \begin{frame}{What to do?}
   \begin{itemize}
-  \item There is no magic test to replace NHST
+  \item 1. There is no magic test to replace NHST
+  \item 2. More emphasis needs to be placed on detective work with data as opposed to sanctification
+  \begin{itemize}
   \item Cohen calls for a shift toward understanding and improving data rather than making mechanical accept-reject decisions
-  \item More emphasis on confidence intervals and effect sizes
+  \end{itemize}
+  \item 3. More emphasis on confidence intervals and effect sizes % confidence intervals contain everything testing a nil hypothesis contains and all of the effect size and crud factor
+  \begin{itemize}
   \item Confidence intervals aren't frequently used because they expose large variability
-  \item Move away from the point "nil hypothesis" to "good-enough" range null hypotheses which will make NHST and power more useful
+  \end{itemize}
+  \item 4. Move away from the point "nil hypothesis" to "good-enough" range null hypotheses which will make NHST and power more useful %dont set the Ho as a new drug and placebo have no difference, but set the Ho to the new drug lowers blood pressure by no more than 5 mmHg (this may be considered not practically significant)
   \end{itemize}
 \end{frame}
 
