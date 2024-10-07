@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.16)  7 OCT 2024 10:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.16)  7 OCT 2024 14:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -975,13 +975,13 @@ Package pdftex.def Info: ./images/JacobCohen.png  used on input line 45.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.187 \end{frame}
+l.188 \end{frame}
                  
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.187 \end{frame}
+l.188 \end{frame}
                  
 ? 
 
@@ -1028,7 +1028,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.316 \end{frame}
+l.317 \end{frame}
                  
 ? 
 
@@ -1071,7 +1071,7 @@ nts/cm/cmssi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mssi17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pf
 b><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ucsas22.pdf (20 pages, 449182 bytes).
+Output written on ucsas22.pdf (20 pages, 449400 bytes).
 PDF statistics:
  592 PDF objects out of 1000 (max. 8388607)
  535 compressed objects within 6 object streams

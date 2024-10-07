@@ -73,25 +73,25 @@ tested" - Bill Rozeboom (1960)
 \begin{itemize} %[parsep=0pt, leftmargin=4mm, topsep=0pt, itemsep=0pt]
 \item Consider a Scenario
    \begin{itemize}
-   \item A scientist believes a certain disease does not exist 
+   \item A scientist believes a certain rare disease does not exist in a population
    \item $H_0$: P = 0
    \item He draws a random sample of 30 cases and finds that 1 person has the disease
    \item $P_S$ = 1/30 = .033
    \end{itemize}
-\item Does $H_0$ need testing with a chi-square? How about a Fischer exact test??
-\item Cohen among many other scientists knows that academia would complain unless this result had a p-value attached to it
+\item How should $H_0$ be tested? Chi-square? How about a Fischer exact test? Is there enough power?
+\item Cohen among many other scientists believe that academia would complain unless this result had a p-value attached to it
  \end{itemize}
 \end{frame}
 
 %Slide 6
 \begin{frame}{So, what is wrong?}
   \begin{itemize}
-  \item We think NHST tells us, "Given these data, what is the probability that $H_0$ is true?"
+  \item We want NHST to tell us, "Given these data, what is the probability that $H_0$ is true?"
   \item What NHST actually tells us, "Given that $H_0$ is true, what is the probability of these (or more extreme) data?"
     before asking your question
-  \item Academics have railed against NHST for many years before Cohen's paper
+  \item Academics have pointed out the failures of NHST for many years, even before Cohen's paper
     \begin{itemize}
-    \item "a potent but sterile intellectual rake who leaves in his merry path a long train of ravished maidens but no viable scientific offspring" - Meehl in 1967
+    \item NHST was described "a potent but sterile intellectual rake who leaves in his merry path a long train of ravished maidens but no viable scientific offspring" - Meehl in 1967
     \item Joseph Berkson attacked NHST in 1938
     \item Lancelot Hogben's book-length critique appeared in 1957
     \end{itemize}
@@ -102,18 +102,19 @@ tested" - Bill Rozeboom (1960)
 %Slide 7
 \begin{frame}{The Permanent Illusion}
   \begin{itemize}
-  \item Many believe the level of significance at which $H_0$ is rejected is the probability that it is correct 
+  \item Many believe the level of significance at which $H_0$ is rejected is the probability that it is correct
+  \item Lets dive into why this thinking is wrong
   \item Syllogistic Reasoning according to Aristotle
 	 \begin{itemize}
  	 \item If the null hypothesis is correct, then this datum (D) can not occur
 	 \item D has, however, occurred
-          \item Therefore, the null hypothesis is false.
+            \item Therefore, the null hypothesis is false
  	 \end{itemize}
 \item This is an example of a modus tollens syllogism, denying the antecedent by denying the consequent
 	 \begin{itemize}
  	 \item If P, then Q 
 	 \item Not Q (Q is false)
-          \item Therefore, not P (P is false)
+            \item Therefore, not P (P is false)
  	 \end{itemize}
   \end{itemize}
 \end{frame}
@@ -121,7 +122,7 @@ tested" - Bill Rozeboom (1960)
 %Slide 8
 \begin{frame}{Probabilistic Syllogism}
   \begin{itemize}
-  \item What if the syllogism is probabilistic?
+  \item NHST makes the modus tollens syllogism probabilistic as follows:
     \begin{itemize}
     \item If the null hypothesis is correct, then these data are highly unlikely
     \item These data have occurred
@@ -131,7 +132,7 @@ tested" - Bill Rozeboom (1960)
 	 \begin{itemize}
  	 \item If P, then Q is likely
 	 \item Not Q
-          \item Therefore, P is unlikely
+            \item Therefore, P is unlikely
  	 \end{itemize}
   \end{itemize}
 \end{frame}
@@ -163,7 +164,7 @@ tested" - Bill Rozeboom (1960)
     \item This person is a member of Congress
     \item Therefore, he is probably not an American
     \end{itemize}
-  \item This last one?
+  \item Notice how these two syllogisms are formally the same
     \begin{itemize}
     \item If $H_0$ is true, then this result (statistical significance) would probably not occur %this if formally the exact same as the previous example, and this is also formally invalid
     \item This result has occurred
@@ -177,7 +178,7 @@ tested" - Bill Rozeboom (1960)
   \begin{itemize}
   \item When testing $H_0$, one is finding the probability data (D) could have arisen if $H_0$ were true, P(D$|$$H_0$)
   \item If this probability is small, one can conclude that $H_0$ is true and D is unlikely
-  \item What about the reverse probability P($H_0$$|$D)?
+  \item What about the reverse probability P($H_0$$|$D)? %statistical tests are done to reject Ho due to its unliklihood
     \begin{itemize}
     \item When rejecting $H_0$, one wants to conclude $H_0$ is unlikely
     \item This probability is only available through Bayes theorem where we need to know P($H_0$)
@@ -204,8 +205,8 @@ tested" - Bill Rozeboom (1960)
 %Slide 13
 \begin{frame}{A Look at Psychiatric Diagnoses cont.}
   \begin{itemize}
-  \item P(D$|$$H_0$) \(<\) .05 seems like what we want, but it is not
-  \item We want P($H_0$$|$D) which equals .60, not the .05 we may have believed
+  \item P(D$|$$H_0$) \(<\) .05 seems like what we want, but it is not %the probability of a positive test given the case is normal. One would reject H0 in this case (albiet mistakenly) and conclude the case has schizophrenia, but nonetheless our selected alpha says its okay. 
+  \item We want P($H_0$$|$D) which equals .60, not the .05 we may have believed %we initlaly wished for this probability, but its quite different, and not close to rejection. 
 \[
 P(H_0 | D) = \frac{P(H_0) \cdot P(\text{test wrong} | H_0)}{P(H_0) \cdot P(\text{test wrong} | H_0) + P(H_1) \cdot P(\text{test correct} | H_1)}
 \]
